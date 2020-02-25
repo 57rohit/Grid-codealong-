@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complex</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(200px, 1fr);
+            grid-gap: 1em;
+        }
+
+        .grid-container>div {
+            background-color: gray;
+            padding: 1em;
+
+        }
+
+        .grid-container>div:nth-child(even) {
+            background-color: red;
+        }
+
+        .center {
+            display: grid;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="box1">lorem </div>
+        <div id="box2">lorem </div>
+        <div id="box3">lorem </div>
+        <div id="box4">lorem </div>
+        <div id="box5">lorem </div>
+        <div id="box6">lorem </div>
+    </div>
+    <h1 class="center">rohit</h1>
+
+
+</body>
+
+</html>
